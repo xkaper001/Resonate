@@ -1,8 +1,5 @@
 name: Build and Deploy App for Consumers
 
-permissions:
-  contents: write
-  
 on:
   workflow_dispatch:
 
