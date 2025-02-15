@@ -25,7 +25,7 @@ jobs:
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.27.0"
+          channel: stable  
 
       # 4. Verify Flutter and Dart Versions
       - name: Verify Flutter Installation
