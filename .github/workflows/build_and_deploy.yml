@@ -31,6 +31,7 @@ jobs:
         run: |
           flutter --version
           dart --version
+          flutter precache
           
       # 6. Install Flutter dependencies
       - name: Install Flutter Dependencies
