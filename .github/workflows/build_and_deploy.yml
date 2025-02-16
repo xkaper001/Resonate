@@ -35,7 +35,7 @@ jobs:
           
       # 6. Install Flutter dependencies
       - name: Install Flutter Dependencies
-        run: flutter pub get
+        run: flutter pub get && flutter pub upgrade
 
       # 7. Build Android App Bundle (AAB)
       - name: Build Android App Bundle
