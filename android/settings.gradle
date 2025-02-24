@@ -40,7 +40,7 @@ pluginManagement {
 plugins {
     id "dev.flutter.flutter-plugin-loader" version "1.0.0"
     id "com.android.application" version "7.1.2" apply false
-    id "org.jetbrains.kotlin.android" version "1.8.0" apply false //{agpVersion} and {kotlinVersion} were taken from android/build.gradle
+    id "org.jetbrains.kotlin.android" version "1.8.22" apply false //{agpVersion} and {kotlinVersion} were taken from android/build.gradle
     // START: FlutterFire Configuration
     id "com.google.gms.google-services" version "4.3.10" apply false //version: 4.3.10 of 'com.google.gms:google-services' is taken from old buildscript block from android/build.gradle
     // END: FlutterFire Configuration
