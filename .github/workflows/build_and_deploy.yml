@@ -1,6 +1,9 @@
 name: Build and Deploy App for Consumers
 
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
@@ -24,7 +27,7 @@ jobs:
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 3.24.3
+          flutter-version: 3.27.0
 
       # 4. Verify Flutter and Dart Versions
       - name: Verify Flutter Installation
@@ -35,7 +38,7 @@ jobs:
           
       # 6. Install Flutter dependencies
       - name: Install Flutter Dependencies
-        run: flutter pub get && flutter pub upgrade --major-versions
+        run: flutter pub get
 
       # 7. Build Android App Bundle (AAB)
       - name: Build Android App Bundle
